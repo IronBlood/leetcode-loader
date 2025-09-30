@@ -121,5 +121,5 @@ export interface QuestionOfTodayResponse {
 
 export class LeetcodeClient {
 	GetQuestionOfToday(): Promise<QuestionOfTodayResponse>;
-	GetQuestionDetail(): Promise<QuestionDetailResponse>;
+	GetQuestionDetail(titleSlug: string): Promise<QuestionDetailResponse>;
 }
