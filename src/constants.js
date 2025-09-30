@@ -6,3 +6,4 @@ const load_query = (filename) => readFileSync(new URL(`./queries/${filename}.gra
 
 export const QUERY_questionOfTodayV2 = load_query("questionOfTodayV2");
 export const QUERY_questionDetail = load_query("questionDetail");
+export const QUERY_problemsetQuestionListV2 = load_query("problemsetQuestionListV2");

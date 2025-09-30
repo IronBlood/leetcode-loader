@@ -119,7 +119,39 @@ export interface QuestionOfTodayResponse {
 	}
 }
 
+interface QuestionListEntry {
+	difficulty: string;
+	id: number;
+	paidOnly: boolean;
+	questionFrontendId: string;
+	status: string;
+	title: string;
+	titleSlug: string;
+	topicTags: Array<{
+		name: string;
+		slug: string;
+		__typename: string;
+	}>;
+	frequency: any;
+	isInMyFavorites: boolean
+	acRate: number;
+	contestPoint: any;
+	__typename: string;
+}
+
+export interface QuestionListV2Response {
+	data: {
+		problemsetQuestionListV2: {
+			questions: QuestionListEntry[];
+			totalLength: number;
+			finishedLength: number;
+			hasMore: boolean;
+		}
+	}
+}
+
 export class LeetcodeClient {
 	GetQuestionOfToday(): Promise<QuestionOfTodayResponse>;
 	GetQuestionDetail(titleSlug: string): Promise<QuestionDetailResponse>;
+	GetQuestionList(skip: number, limit?: number): Promise<QuestionListV2Response>;
 }
