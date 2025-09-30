@@ -1,0 +1,28 @@
+{
+	"name": "@ironblood/leetcode-loader",
+	"version": "0.0.0",
+	"main": "src/client.js",
+	"type": "module",
+	"types": "src/client.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Yang Shen <aplshenyang@gmail.com> (https://github.com/IronBlood)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IronBlood/leetcode-loader.git"
+	},
+	"homepage": "https://github.com/IronBlood/leetcode-loader#readme",
+	"bugs": {
+		"url": "https://github.com/IronBlood/leetcode-loader/issues"
+	},
+	"description": "",
+	"publishConfig": {
+		"provenance": true,
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/node": "^22"
+	}
+}
